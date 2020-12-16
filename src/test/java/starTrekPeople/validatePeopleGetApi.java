@@ -1,29 +1,13 @@
 package starTrekPeople;
 
-import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.given;
-import static java.util.OptionalDouble.empty;
-import static org.apache.http.entity.ContentType.APPLICATION_JSON;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.not;
-import static org.junit.Assert.assertTrue;
 
 import apiConfigs.APIPath;
 import apiVerifications.APIVerification;
 import baseTest.BaseTest;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.apache.http.HttpStatus;
-import org.junit.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import utils.ExtentReportGenerator;
 
 
 public class validatePeopleGetApi extends BaseTest {

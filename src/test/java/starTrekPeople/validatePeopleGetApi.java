@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 
 
 public class validatePeopleGetApi extends BaseTest {
+    /** Test to validate
+     * the GET people API*/
     @Test
     public void validatePeopleGet() {
         test.log(LogStatus.INFO, "========TEST STARTED======");

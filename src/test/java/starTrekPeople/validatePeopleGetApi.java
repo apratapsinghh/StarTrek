@@ -1,9 +1,9 @@
 package starTrekPeople;
 
 
-import apiConfigs.APIPath;
-import apiVerifications.APIVerification;
-import baseTest.BaseTest;
+import resources.APIPath;
+import resources.APIVerification;
+import resources.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

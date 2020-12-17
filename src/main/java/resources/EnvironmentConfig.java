@@ -1,11 +1,11 @@
-package utils;
+package resources;
 
 import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-public class FileEnv {
+public class EnvironmentConfig {
     public static Map<String,String> fileandenv = new HashMap<String, String>();
     public static Properties propertiesMain = new Properties();
 

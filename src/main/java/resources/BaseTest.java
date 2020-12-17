@@ -1,17 +1,15 @@
-package baseTest;
+package resources;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
-import utils.ExtentReportGenerator;
-import utils.FileEnv;
 
 @Listeners(ExtentReportGenerator.class)
 public class BaseTest extends ExtentReportGenerator {
 
     @BeforeClass
     public static void baseTest() {
-        RestAssured.baseURI = FileEnv.envAndFile().get("ServerUrl");
+        RestAssured.baseURI = EnvironmentConfig.envAndFile().get("ServerUrl");
     }
 
 }

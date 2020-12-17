@@ -1,4 +1,4 @@
-package apiConfigs;
+package resources;
 
 public class APIPath {
     public static final class apiPath{

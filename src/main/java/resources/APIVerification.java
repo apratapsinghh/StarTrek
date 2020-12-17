@@ -1,8 +1,7 @@
-package apiVerifications;
+package resources;
 
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.Assert;
-import utils.ExtentReportGenerator;
 import org.json.JSONObject;
 import io.restassured.response.Response;
 

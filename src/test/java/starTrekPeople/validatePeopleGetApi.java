@@ -16,18 +16,12 @@ public class validatePeopleGetApi extends BaseTest {
         test.log(LogStatus.INFO, "========TEST STARTED======");
         Response response = RestAssured.given().when().get(APIPath.apiPath.GET_LIST_OF_PEOPLE);
         APIVerification.responseCodeValidation(response, 200);
-        APIVerification.responseKeyValidationFromJsonObject(response,"name");
-        APIVerification.responseKeyValidationFromJsonObject(response,"height");
-        APIVerification.responseKeyValidationFromJsonObject(response,"vehicles");
+        APIVerification.responseKeyValidationFromJsonObject(response, "name");
+        APIVerification.responseKeyValidationFromJsonObject(response, "height");
+        APIVerification.responseKeyValidationFromJsonObject(response, "vehicles");
         APIVerification.responseTimeValidation(response);
-
-        System.out.println(response.getBody().asString());
-        System.out.println(response.getStatusCode());
-        System.out.println(response.getTime());
         test.log(LogStatus.INFO, "Status code:" + response.getStatusCode());
         test.log(LogStatus.INFO, response.getBody().asString());
-        test.log(LogStatus.INFO, "Response Time:" + response.getTime());
-        test.log(LogStatus.INFO, "========TEST FINISHED======");
 
     }
 }
